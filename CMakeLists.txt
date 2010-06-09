@@ -94,7 +94,8 @@ add_executable(${PROJECT_AWE_NAME}
 
 set_target_properties(${PROJECT_AWE_NAME}
     PROPERTIES
-    LINK_FLAGS --export-dynamic)
+    LINK_FLAGS --export-dynamic
+    LINK_FLAGS -liconv)
 
 target_link_libraries(${PROJECT_AWE_NAME}
     ${AWESOME_COMMON_REQUIRED_LIBRARIES}
